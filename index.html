@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--I can't set the length of the lines, how do I do that?-->
+
+<div class="container">
+    <svg height="300" width="300" xmlns="http://www.w3.org/2000/svg" >
+    <circle cx="150" cy="150" r="110" fill="red" />
+    <line class="first" x1="20" y1="20" x2="200" y2="190" />
+    <line class="second" x1="20" y1="240" x2="300" y2="30" />
+    </svg>
+</div>
+
+<div class="container">
+    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <rect class="rect" x="50" y="20" rx="3" ry="3" width="300" height="200"/>
+    <line class="rect-first" x1="50" y1="20" x2="200" y2="120" stroke="black" stroke-width="15" stroke-linecap="round" />
+    <line class="rect-second" x1="350" y1="20" x2="200" y2="120" stroke="black" stroke-width="15" stroke-linecap="round" />
+    </svg>
+</div>
+
+<!--The same problem here, I want the line to cut off earlier in the right bottom part of the svg-->
+
+<div class="container">
+    <svg height="300" width="300" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="150" cy="150" r="80" fill="none" stroke="black" stroke-width="20" />
+    <line x1="300" y1="280" x2="215" y2="200" stroke="black" stroke-width="20" stroke-linecap="round"/>
+    </svg>
+</div>
+
+<div class="container">
+<!--first way
+<img src="img/TeddyBearOutline.svg" width="300px" height="300px" alt="Teddy Bear">-->
+    <svg>
+        <use xlink:href="img/TeddyBearOutline.svg#teddy-bear"></use>
+    </svg>
+</div>
+
+</body>
+</html>

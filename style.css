@@ -1,0 +1,16 @@
+.first,
+.second {
+  stroke: white;
+  stroke-width: 12;
+}
+
+.rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 15;
+  border-radius: 50px;
+}
+
+.container {
+  margin-top: 30px;
+}
